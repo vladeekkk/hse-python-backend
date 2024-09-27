@@ -1,24 +1,20 @@
 [tool.poetry]
-name = "hse-python-backend"
+name = "main"
 version = "0.1.0"
 description = ""
-authors = ["Ilya Katun <katun.ilya@gmail.com>"]
+authors = ["vl.krasov"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = "^3.9"
 uvicorn = "^0.30.6"
-fastapi = "^0.114.2"
 requests = "^2.32.3"
 
-
-[tool.poetry.group.dev.dependencies]
-ruff = "^0.6.5"
-
-
-[tool.poetry.group.test.dependencies]
-pytest = "^8.3.3"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+
